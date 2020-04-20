@@ -1,10 +1,8 @@
 import { getData } from './utils'
 
-const baseURL = 'http://localhost:5000'
-
 const searchTrip = async (date, destination) => {
   return new Promise((resolve, reject) => {
-    const url = `${baseURL}/search?date=${date}&destination=${destination}`
+    const url = `/search?date=${date}&destination=${destination}`
     getData(url)
       .then(response => {
         if (response.status !== 200) {
