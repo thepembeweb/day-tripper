@@ -1,0 +1,113 @@
+.trip-card {
+  text-align: center;
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+
+  .trip-card__img {
+    width: 100%;
+    margin: 0 0 22rem 0;
+  }
+
+  .trip-card__title {
+    text-align: center;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3em;
+  }
+
+  .trip-card__sub-title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .trip-card__text {
+    text-align: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 2em 0 1em 0;
+  }
+
+  .trip-card__info {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+    .trip-card__info__title {
+      border-bottom: solid 2px #007f1a;
+      padding: 0 1em 1em 1em;
+      margin: 10px 10px 15px 10px;
+    }
+    .trip-card__info__card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .trip-card__info__card__img {
+        height: 84px;
+        width: auto;
+        border: solid 1px $black;
+      }
+      .trip-card__info__card__content {
+        display: flex;
+        flex-direction: column;
+        .trip-card__info__card__content__title {
+        }
+
+        .trip-card__info__card__content__details {
+          display: flex;
+          justify-content: space-around;
+          padding: 1em;
+
+          &.column {
+            flex-direction: column;
+          }
+
+          .item {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+    .trip-card__info__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1em;
+    }
+  }
+
+  .trip-card__footer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+  }
+}
+
+@include sm {
+  .trip-card {
+    .trip-card__info {
+      .trip-card__info__content {
+        flex-direction: row;
+      }
+    }
+  }
+}
+@include lg {
+  .trip-card {
+    .trip-card__info {
+      .trip-card__info__content {
+        flex-direction: row;
+      }
+    }
+  }
+}
+@include rwd(1400) {
+  .trip-card {
+    .trip-card__info {
+      .trip-card__info__content {
+        flex-direction: row;
+      }
+    }
+  }
+}

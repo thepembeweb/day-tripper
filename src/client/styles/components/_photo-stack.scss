@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the photo-stack component.
+// -----------------------------------------------------------------------------
+
+.photo-stack {
+  width: auto;
+  margin: 1em 0;
+  text-align: center;
+  white-space: nowrap;
+
+  .photo-stack__img {
+    min-width: 200px;
+    max-width: 50%;
+    min-height: 200px;
+    max-height: 100%;
+    margin: 0 -60px;
+    border: 10px solid $white;
+    outline: 1px solid $transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: $darkish-grey;
+  }
+
+  .photo-stack__img--rotation-1 {
+    -webkit-transform: rotate3d(0, 0, 1, -8deg);
+    transform: rotate3d(0, 0, 1, -8deg);
+  }
+
+  .photo-stack__img--rotation-2 {
+    -webkit-transform: rotate3d(0, 0, 1, -1deg);
+    transform: rotate3d(0, 0, 1, -1deg);
+  }
+
+  .photo-stack__img--rotation-3 {
+    -webkit-transform: rotate3d(0, 0, 1, 9deg);
+    transform: rotate3d(0, 0, 1, 9deg);
+  }
+}

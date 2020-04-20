@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------------
+// This file contains all styles related to the main section of the site/application.
+// -----------------------------------------------------------------------------------
+
+main {
+  grid-area: main;
+  display: grid;
+  // justify-items: center;
+  // padding: 1.875rem 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  main {
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  main {
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main {
+  }
+}
+@media only screen and (min-width: 992px) {
+  main {
+  }
+}

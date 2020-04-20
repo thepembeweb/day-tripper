@@ -1,0 +1,109 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the photo-hero component.
+// -----------------------------------------------------------------------------
+
+.photo-hero {
+  background-color: $light-green;
+  min-height: 500px; // 700px;
+
+  .photo-hero-text {
+    padding: 0 20px 80px 20px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: $white;
+      margin: 0.5em 0 40px;
+      font-size: 3em;
+    }
+    h1 span {
+      color: $dark-green;
+    }
+    p {
+      color: $white;
+      font-size: 1em;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include sm {
+  .photo-hero {
+    min-height: 500px;
+    .photo-hero-text {
+      padding: 0 20px;
+      display: inline;
+      flex-direction: column;
+      h1 {
+        font-size: 5em;
+      }
+      h1 span {
+        color: $dark-green;
+      }
+      p {
+        font-size: 1.5em;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+@include lg {
+  .photo-hero {
+    min-height: 600px;
+    .photo-hero-text {
+      padding: 0 20px;
+      display: inline;
+      h1 {
+        font-size: 5em;
+      }
+      h1 span {
+        color: $dark-green;
+      }
+      p {
+        font-size: 1.5em;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+@include rwd(1400) {
+  .photo-hero {
+    min-height: 700px;
+    .photo-hero-text {
+      padding: 0 20px;
+      display: inline;
+      h1 {
+        font-size: 5em;
+      }
+      h1 span {
+        color: $dark-green;
+      }
+      p {
+        font-size: 1.5em;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+#addTripButton {
+  margin: 0 0 30px 0;
+}
+
+// @media (min-width: 585px) {
+//   .photo-hero {
+//     min-height: 600px;
+//   }
+// }
+// @media (min-width: 720px) {
+//   .photo-hero {
+//     min-height: 500px;
+//   }
+// }
+// @media (min-width: 1024px) {
+//   .photo-hero {
+//     min-height: 700px;
+//   }
+// }

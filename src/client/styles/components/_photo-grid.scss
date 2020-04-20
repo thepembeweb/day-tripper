@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the photo-grid component.
+// -----------------------------------------------------------------------------
+
+.photo-grid {
+  margin-top: -80px;
+
+  .image-box {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-height: 450px;
+    overflow: hidden;
+    float: left;
+    display: inline-block;
+  }
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 585px) {
+}
+@media (min-width: 720px) {
+  .image-box {
+    width: calc(33.3333% - 40px);
+  }
+}
+@media (min-width: 1024px) {
+}

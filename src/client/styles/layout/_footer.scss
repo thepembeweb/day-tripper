@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+  grid-area: footer;
+  display: grid;
+  background-color: #007f1a;
+  color: $white;
+  padding: 30px;
+  text-align: center;
+
+  //   grid-template-columns: repeat(4, 1fr);
+  //   grid-gap: 2rem 0;
+  //   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  //   background-color: hsla(48, 47%, 84%, 1);
+
+  .footer-navigation {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  a {
+    color: $white;
+  }
+}

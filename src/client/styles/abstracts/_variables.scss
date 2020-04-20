@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Playfair Display', Georgia, serif !default;
+
+/// Dark grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: hsla(0, 0%, 20%, 1);
+
+/// Light grey
+/// @type Color
+$light-grey: hsla(0, 0%, 98%, 1);
+
+/// Darkish grey
+/// @type Color
+$darkish-grey: hsla(0, 0%, 67%, 1);
+
+/// Light green
+/// @type Color
+$light-green: hsla(132, 100%, 65%, 1);
+
+/// Lighter green
+/// @type Color
+$lighter-green: hsla(132, 100%, 50%, 1);
+
+/// Dark green
+/// @type Color
+$dark-green: hsla(132, 100%, 25%, 1);
+
+/// White
+/// @type Color
+$white: hsla(0, 0%, 100%, 1);
+
+/// Black
+/// @type Color
+$black: hsla(0, 0%, 0%, 1);
+
+/// Red
+/// @type Color
+$red: hsla(0, 100%, 50%, 1);
+
+/// Brown
+/// @type Color
+$brown: hsla(0, 0%, 53%, 1);
+
+/// Orange
+/// @type Color
+$orange: hsla(4, 90%, 58%, 1);
+
+/// Transparent
+/// @type Color
+$transparent: transparent;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+// Small tablets and large smartphones (landscape view)
+/// @type Length
+$screen-sm-min: 576px !default;
+
+// Small tablets (portrait view)
+/// @type Length
+$screen-md-min: 768px !default;
+
+// Tablets and small desktops
+/// @type Length
+$screen-lg-min: 992px !default;
+
+// Large tablets and desktops
+/// @type Length
+$screen-xl-min: 1200px !default;

@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+body {
+  background: $white;
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  // grid-template-columns: 100%;
+  // grid-template-rows: 50px 1fr 50px;
+  // grid-column-gap: 0;
+  // grid-row-gap: 0;
+  // height: 100%;
+  // width: 100%;
+}

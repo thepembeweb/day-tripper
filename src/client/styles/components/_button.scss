@@ -1,0 +1,63 @@
+button {
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.button {
+    display: inline-block;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &.button-primary {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $transparent;
+    float: left;
+  }
+}
+
+a {
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.button {
+    display: inline-block;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &.button-primary {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $transparent;
+    float: left;
+  }
+}
