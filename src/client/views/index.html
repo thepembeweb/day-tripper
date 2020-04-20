@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Day Tripper | Roam around the world.</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no"
+    />
+    <meta name="description" content="A simple travel booking app" />
+    <meta name="keywords" content="travel, vacation" />
+    <meta name="author" content="Pemberai Sweto" />
+  </head>
+  <body>
+    <header role="banner" class="photo-hero">
+      <nav
+        role="navigation"
+        aria-label="site navigation"
+        class="site-navigation"
+      >
+        <img src="../assets/images/globe.svg" alt="World globe" />
+
+        <span>"Roam around the world"</span>
+      </nav>
+
+      <div class="container">
+        <div class="photo-hero-text">
+          <h1>Day<span>Tripper</span></h1>
+          <p>
+            Hello there! Lets help you organize your trips far and wide around
+            the world.
+          </p>
+          <a
+            id="addTripButton"
+            href="javascript:void(0)"
+            class="button button-primary"
+            >Add Trip</a
+          >
+
+          <div class="photo-stack">
+            <img
+              class="photo-stack__img photo-stack__img--rotation-1"
+              src="../assets/images/balloons.jpg"
+              alt="Balloons"
+            />
+            <img
+              class="photo-stack__img photo-stack__img--rotation-2"
+              src="../assets/images/lake.jpg"
+              alt="Lake"
+            />
+            <img
+              class="photo-stack__img photo-stack__img--rotation-3"
+              src="../assets/images/terrain.jpg"
+              alt="Terrain"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section role="region" aria-label="photo-grid" class="photo-grid">
+        <div id="tripsGrid" class="container"></div>
+      </section>
+    </main>
+
+    <footer role="contentinfo" class="clearfix">
+      <nav role="navigation" class="footer-navigation">
+        <ul>
+          <li>
+            Copyright &copy; 2020.
+            <a
+              href="https://github.com/thepembeweb"
+              title="Pemberai Sweto"
+              target="_blank"
+              >Pemberai Sweto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <div id="modalForm" class="modal-form">
+      <form class="modal-content animate">
+        <div id="tripCaptureCard" class="container">
+          <div class="imgcontainer">
+            <span
+              onclick="document.getElementById('modalForm').style.display='none'"
+              class="close"
+              title="Close Modal"
+              >×</span
+            >
+            <div class="photo-stack">
+              <img
+                class="photo-stack__img photo-stack__img--rotation-1"
+                src="../assets/images/balloons.jpg"
+                alt="Balloons"
+              />
+              <img
+                class="photo-stack__img photo-stack__img--rotation-2"
+                src="../assets/images/lake.jpg"
+                alt="Lake"
+              />
+              <img
+                class="photo-stack__img photo-stack__img--rotation-3"
+                src="../assets/images/terrain.jpg"
+                alt="Terrain"
+              />
+            </div>
+          </div>
+          <label for="destinationInput"><b>YOUR DESTINATION</b></label>
+          <input
+            type="text"
+            placeholder="Enter Destination"
+            id="destinationInput"
+            name="destinationInput"
+          />
+          <span class="error"></span>
+
+          <label for="arrivalDateInput"><b>ARRIVAL DATE</b></label>
+          <input
+            type="date"
+            placeholder="Enter Arrival Date"
+            id="arrivalDateInput"
+            name="arrivalDateInput"
+          />
+          <span class="error"></span>
+
+          <button id="searchButton" type="button">LETS GO</button>
+        </div>
+
+        <div id="tripDetailsCard" data-id="0" class="container">
+          <div class="trip-card">
+            <img
+              id="tripCardImage"
+              class="trip-card__img"
+              src="../assets/images/blurred-background.jpg"
+              alt="Trip Card Image"
+            />
+
+            <h1 id="tripCardTitle" class="trip-card__title"></h1>
+            <h2 id="tripCardSubTitle" class="trip-card__sub-title"></h2>
+            <p id="tripCardText" class="trip-card__text"></p>
+
+            <div class="trip-card__info">
+              <h3 class="trip-card__info__title">
+                Weather Information
+              </h3>
+
+              <div class="trip-card__info__card">
+                <img
+                  id="tripCardInfoCardWeatherImage"
+                  width="84"
+                  height="84"
+                  src="../assets/images/blurred-background.jpg"
+                  alt=""
+                />
+                <div class="trip-card__info__card__content">
+                  <span
+                    id="tripCardInfoCardWeatherTitle"
+                    class="trip-card__info__card__content__title"
+                  ></span>
+                  <div class="trip-card__info__card__content__details">
+                    <span
+                      id="tripCardInfoCardWeatherFeelsLike"
+                      class="item"
+                    ></span>
+                    <span id="tripCardInfoCardWeatherLow" class="item"></span>
+                    <span id="tripCardInfoCardWeatherHigh" class="item"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="trip-card__info__content">
+                <span id="tripCardInfoCardWeatherWind"></span>
+                <span id="tripCardInfoCardWeatherHumidity"></span>
+                <span id="tripCardInfoCardWeatherUVIndex"></span>
+              </div>
+              <div class="trip-card__info__content">
+                <span id="tripCardInfoCardWeatherDew"></span>
+                <span id="tripCardInfoCardWeatherCloudCover"></span>
+                <span id="tripCardInfoCardWeatherPressure"></span>
+              </div>
+            </div>
+
+            <div class="trip-card__info">
+              <h3 class="trip-card__info__title">
+                Country Information
+              </h3>
+
+              <div class="trip-card__info__card">
+                <img
+                  id="tripCardInfoCardCountryImage"
+                  class="trip-card__info__card__img"
+                  src="../assets/images/blurred-background.jpg"
+                  alt=""
+                />
+                <div class="trip-card__info__card__content">
+                  <span
+                    id="tripCardInfoCardCountry"
+                    class="trip-card__info__card__content__title"
+                  ></span>
+                  <div class="trip-card__info__card__content__details column">
+                    <span id="tripCardInfoCardPopulation"></span
+                    ><span id="tripCardInfoCardDemonym"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trip-card__footer">
+              <button id="saveTripButton" type="button">SAVE TRIP</button
+              ><button id="cancelTripButton" type="button">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="loader" id="loader"></div>
+  </body>
+</html>
