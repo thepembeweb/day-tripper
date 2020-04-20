@@ -1,12 +1,64 @@
 {
   "name": "day-tripper",
   "version": "1.0.0",
-  "description": "Day Tripper",
+  "description": "This project showcases a travel app that allows users to choose any destination around the world and save the trip details.",
   "main": "index.js",
+  "dependencies": {
+    "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "prettier": "^2.0.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.12",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "superagent": "^5.2.2",
+    "supertest": "^4.0.2",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.7.2",
+    "workbox-webpack-plugin": "^4.3.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": ["/node_modules/"]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepembeweb/day-tripper.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Pemberai Sweto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thepembeweb/day-tripper/issues"
+  },
+  "homepage": "https://github.com/thepembeweb/day-tripper#readme"
 }
