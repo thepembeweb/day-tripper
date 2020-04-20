@@ -4,6 +4,9 @@
   "description": "This project showcases a travel app that allows users to choose any destination around the world and save the trip details.",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@babel/register": "^7.9.0",
     "@babel/runtime": "^7.9.2",
     "body-parser": "^1.19.0",
@@ -14,9 +17,6 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
